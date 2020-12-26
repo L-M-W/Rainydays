@@ -1,0 +1,31 @@
+/*Global*/
+body {
+  margin: 0;
+}
+header,
+footer {
+  background-color: #053641;
+  color: white;
+}
+footer {
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  background-image: url(/images/ansgar-scheffold-hero_1500x600.jpg);
+  background-size: cover;
+  min-height: 40vh;
+  background-position: center;
+}
+.topbanner {
+  background-color: #eb8e00;
+  color: white;
+  text-align: center;
+}
+.icons {
+  font-size: 1.7em;
+  color: #eb8e00;
+}
