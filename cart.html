@@ -34,7 +34,9 @@
       </nav>
 
       <!--Search-->
-      <section>Searchfield</section>
+      <form>
+        <input type="text" name="search" />
+      </form>
 
       <!--Shopping-->
       <section class="icons">
@@ -45,32 +47,38 @@
     </header>
 
     <main>
-      <h1>Your shopping cart</h1>
+      <h1 class="headline">Your shopping cart</h1>
       <hr />
-      <section>
+      <section class="cart">
         <div>
           <img src="/images/white-jacket_450x259_medlogo.jpg" />
           <p>Rainydays Waterproof Jacket W's</p>
-          <p>kr 999,00</p>
+          <p class="productprice">kr 999,00</p>
           <div>Antall inn her</div>
-          <p>kr 999,00</p>
+          <p class="productprice">kr 999,00</p>
         </div>
 
         <div>
           <img src="/images/white-jacket_450x259_medlogo.jpg" />
           <p>Rainydays Waterproof Jacket W's</p>
-          <p>kr 999,00</p>
+          <p class="productprice">kr 999,00</p>
           <div>Antall inn her</div>
-          <p>kr 999,00</p>
+          <p class="productprice">kr 999,00</p>
         </div>
 
         <div>
           <p>Subtotal kr 1998,00</p>
-          <p>Order total</p>
+          <p class="sumtotal">Order total kr 1998,00</p>
         </div>
       </section>
-      <button>Add to wishlist</button>
-      <a href="checkout.html"><button>Go to checkout</button></a>
+      <button class="btn wishlist">
+        <i class="far fa-heart wishlist"></i>Add to wishlist
+      </button>
+      <a href="checkout.html"
+        ><button class="btn checkout">
+          <i class="fas fa-shopping-cart checkout"></i>Go to checkout
+        </button></a
+      >
     </main>
     <footer>
       &copy; RainyDays 2020

@@ -36,7 +36,9 @@
       </nav>
 
       <!--Search-->
-      <section>Searchfield</section>
+      <form>
+        <input type="text" name="search" />
+      </form>
 
       <!--Shopping-->
       <section class="icons">
@@ -47,13 +49,14 @@
     </header>
     <main>
       <div>
-        <section>
-          <img src="#" />
-          <img src="#" />
-          <img src="#" />
-          <img src="#" />
+        <section class="product">
+          <img src="../images/white-jacket_500x500_medlogo.jpg" />
+          <img src="../images/michael-shannon-_500x500.jpg" />
+          <img src="../images/white-jacket_500x500_medlogo.jpg" />
+          <img src="../images/emrah-demirag-500x500.jpg" />
+          <img src="../images/kalen-emsley--500x500.jpg" />
         </section>
-        <section>
+        <section class="product">
           <h1>RainyDays Windbreaker W's</h1>
           <div>
             <ul>
@@ -63,14 +66,16 @@
             </ul>
           </div>
           <div>Art. 1748-687</div>
-          <p>1199,00</p>
+          <p class="pricetag pricetag-single">1199,00</p>
           <div>
-            <button>S-Small</button>
-            <button>M-Medium</button>
-            <button>L-Large</button>
-            <button>XL-Extra Large</button>
+            <button class="sizebtn">S-Small</button>
+            <button class="sizebtn">M-Medium</button>
+            <button class="sizebtn">L-Large</button>
+            <button class="sizebtn">XL-Extra Large</button>
           </div>
-          <button>Add to cart</button>
+          <button class="cartbtn">
+            <i class="fas fa-cart-plus addcart"></i>Add to cart
+          </button>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
             lobortis sem, et elementum tellus. Proin tortor lacus, molestie
