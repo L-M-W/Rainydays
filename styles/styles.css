@@ -23,17 +23,28 @@ body {
   color: #053641;
   font-family: D-DIN Regular, Arial, sans-serif;
 }
+main {
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 header,
 footer {
   background-color: #053641;
   color: white;
-}
-footer {
-  min-height: 5vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+footer {
+  min-height: 5vh;
+}
+header {
+  border-bottom: 2px solid #f5c44c;
+}
+
 p {
   font-size: 1.11em;
 }
@@ -49,6 +60,7 @@ h2 {
   background-color: #eb8e00;
   color: white;
   text-align: center;
+  flex-basis: 100%;
 }
 i {
   font-size: 1.7em;
@@ -86,6 +98,7 @@ i {
 /*NAVIGATION*/
 nav ul {
   padding: 0%;
+  margin: 0 20px 0 20px;
 }
 nav li {
   display: inline-block;
@@ -116,11 +129,19 @@ li a {
   background-size: cover;
   min-height: 40vh;
   background-position: center;
-  border-top: 2px solid #f5c44c;
+
+  flex-basis: 100%;
 }
 #hero h1 {
   margin-top: 0;
   padding-top: 0.4em;
+}
+#hero section {
+  margin: 1.5em;
+}
+.product-highlights {
+  display: flex;
+  flex-wrap: wrap;
 }
 /*CONTACT PAGE*/
 .contact {
