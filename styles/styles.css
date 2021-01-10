@@ -44,18 +44,12 @@ footer {
   align-items: center;
   width: 100%;
 }
-/*.header-container {
-  max-width: 1380px;
-  margin: auto;
-  justify-content: space-between;}*/
-
 footer {
   min-height: 5vh;
 }
 header {
   border-bottom: 2px solid #f5c44c;
 }
-
 p {
   font-size: 1.11em;
 }
@@ -66,7 +60,6 @@ h1 {
 h2 {
   font-family: "D-DIN Condensed Bold", Arial, sans-serif;
 }
-
 .topbanner {
   background-color: #eb8e00;
   color: white;
@@ -78,13 +71,6 @@ i {
   color: #eb8e00;
   padding: 10px 20px;
 }
-/*.icons {
-  font-size: 1.7em;
-  color: #eb8e00;
-}
-.icons i {
-  padding: 10px 20px;
-}*/
 .cta {
   background-color: #025951;
   color: #ffffff;
@@ -120,6 +106,7 @@ i {
 .fas {
   padding: 0;
 }
+
 /*NAVIGATION*/
 nav ul {
   padding: 0%;
@@ -155,7 +142,6 @@ li a {
   background-size: cover;
   min-height: 40vh;
   background-position: center;
-
   flex-basis: 100%;
 }
 #hero h1 {
