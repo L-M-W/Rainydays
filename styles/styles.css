@@ -24,7 +24,6 @@ body {
   color: #053641;
   font-family: D-DIN Regular, Arial, sans-serif;
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
 }
@@ -117,6 +116,10 @@ i {
   display: inline-block;
   padding: 3px 40px;
 }
+.fa,
+.fas {
+  padding: 0;
+}
 /*NAVIGATION*/
 nav ul {
   padding: 0%;
@@ -145,6 +148,7 @@ li a {
   border: 1px solid #f5c44c;
   font-size: 1.2em;
 }
+
 /*HOMEPAGE*/
 #hero {
   background-image: url(/images/ansgar-scheffold-hero_1500x600.jpg);
@@ -166,6 +170,9 @@ li a {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
+}
+.search {
+  padding: 10px 20px;
 }
 /*CONTACT PAGE*/
 .contact {
@@ -254,17 +261,33 @@ li a {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
+  header img {
+    max-width: 50%;
+  }
   nav {
+    justify-content: center;
+    width: 100%;
     display: none;
+    position: fixed;
+    top: 13vh;
+    background: #053641;
+    z-index: 100;
+  }
+
+  nav li {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
   }
   #hamburger-label {
     display: contents;
+    padding: 10px 20px;
   }
   #hamburger-menu {
     display: none;
   }
   #hamburger-menu:checked ~ nav {
-    display: block;
+    display: flex;
   }
 }
 
@@ -272,8 +295,5 @@ li a {
 @media screen and (max-width: 679px) {
   #hero {
     background-image: url(../images/andrea-gugliada-hero-mobile-679x453.jpg);
-  }
-  header img {
-    max-width: 50%;
   }
 }
