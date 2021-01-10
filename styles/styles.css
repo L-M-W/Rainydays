@@ -238,6 +238,12 @@ li a {
   color: #eb8e00;
   text-decoration: underline;
 }
+#hamburger-menu {
+  display: none;
+}
+#hamburger-label {
+  display: none;
+}
 
 /*********************Tablet****************************/
 @media screen and (max-width: 1375px) {
@@ -247,6 +253,18 @@ li a {
   .product {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+  }
+  nav {
+    display: none;
+  }
+  #hamburger-label {
+    display: contents;
+  }
+  #hamburger-menu {
+    display: none;
+  }
+  #hamburger-menu:checked ~ nav {
+    display: block;
   }
 }
 
