@@ -20,9 +20,11 @@
 /*GLOBAL*/
 body {
   margin: 0;
+  padding: 0;
   color: #053641;
   font-family: D-DIN Regular, Arial, sans-serif;
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
 }
@@ -41,6 +43,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 /*.header-container {
   max-width: 1380px;
@@ -69,7 +72,7 @@ h2 {
   background-color: #eb8e00;
   color: white;
   text-align: center;
-  flex-basis: 100%;
+  width: 100%;
 }
 i {
   font-size: 1.7em;
@@ -103,6 +106,8 @@ i {
 }
 .product img {
   border: 1px solid #f5c44c;
+  width: 100%;
+  height: auto;
 }
 .pricetag {
   font-family: "D-DIN Condensed Bold", Arial, sans-serif;
@@ -232,4 +237,25 @@ li a {
 .login {
   color: #eb8e00;
   text-decoration: underline;
+}
+
+/*********************Tablet****************************/
+@media screen and (max-width: 1375px) {
+  .product-highlights {
+    justify-content: space-evenly;
+  }
+  .product {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+/*********************Mobile**************************/
+@media screen and (max-width: 679px) {
+  #hero {
+    background-image: url(../images/andrea-gugliada-hero-mobile-679x453.jpg);
+  }
+  header img {
+    max-width: 50%;
+  }
 }
