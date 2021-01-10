@@ -22,12 +22,16 @@ body {
   margin: 0;
   color: #053641;
   font-family: D-DIN Regular, Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 main {
   max-width: 1380px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
 }
 header,
 footer {
@@ -38,6 +42,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+/*.header-container {
+  max-width: 1380px;
+  margin: auto;
+  justify-content: space-between;}*/
+
 footer {
   min-height: 5vh;
 }
@@ -79,6 +88,14 @@ i {
   color: #ffffff;
   text-transform: uppercase;
   padding: 10px 50px;
+}
+.product {
+  position: relative;
+}
+.product h2 {
+  position: absolute;
+  top: 80%;
+  right: 20%;
 }
 .product h2,
 .product h1 {
