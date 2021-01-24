@@ -3,27 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Rainydays Order Checkout, we make raincoats you can wear while pushing the comfort zone "
-    />
+    <meta name="description" content="Rainydays Order Checkout, we make raincoats you can wear while pushing the comfort zone " />
     <title>RainyDays | Checkout</title>
-    <script
-      src="https://kit.fontawesome.com/cc20864ea7.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/cc20864ea7.js" crossorigin="anonymous"></script>
     <link href="styles/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <section class="topbanner">
-        <a href="contact.html"
-          >Free shipping within Norway. Conditions apply. Click to learn more</a
-        >
-      </section>
-      <a href="index.html"><img src="/images/RainyDays_hvit.png" alt="" /></a>
+      <div class="topbanner">
+        <a href="contact.html">Free shipping within Norway. Conditions apply. Click to learn more</a>
+      </div>
+
+      <a href="index.html"><img src="/images/RainyDays_hvit.png" alt="rainydays.logo." /></a>
 
       <!--site navigation-->
+      <label for="hamburger-menu" id="hamburger-label"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
           <li><a href="women/index.html">Men</a></li>
@@ -34,57 +29,72 @@
       </nav>
 
       <!--Search-->
-      <form>
+      <form class="search">
         <input type="text" name="search" />
       </form>
 
       <!--Shopping-->
-      <section class="icons">
+      <div class="icons">
         <i class="far fa-heart"></i>
         <i class="far fa-user"></i>
-        <i class="fas fa-shopping-cart"></i>
-      </section>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
     </header>
 
-    <main>
-      <p>
-        <a href="#" class="login">Log in here</a> if you already are a customer,
-        or continue as guest
-      </p>
+    <main id="checkout_container">
+      <p><a href="#" class="login">Log in here</a> if you already are a customer, or continue as a guest</p>
+
       <section>
-        <h1>Your details</h1>
-        <hr />
-        <form></form>
-        <h1>Shipping</h1>
-        <form></form>
-        <h1>Payment</h1>
-        <form></form>
+        <a href="cart.html" class="backtocart"><h2>Click here to edit your cart</h2></a>
+        <p>Need help? > <a href="contact.html">Contact us</a></p>
       </section>
 
       <section>
-        <h1>Your cart <span>Edit</span></h1>
-        <div>
-          <div>
-            <img src="/images/white-jacket_450x259_medlogo.jpg" />
-            <p>Rainydays Waterproof Jacket W's</p>
-            <p>kr 999,00 x 1</p>
-            <div>
-              <img src="/images/white-jacket_450x259_medlogo.jpg" />
-              <p>Rainydays Waterproof Jacket W's</p>
-              <p>kr 999,00 x 1</p>
-            </div>
-            <p>Subtotal kr 1498,50</p>
-            <p>No vat 20% kr 499,50</p>
-            <p>Order total kr 1998,00</p>
-          </div>
-        </div>
-        <p>Need help? > <a href="contact.html">Contact us</a></p>
+        <h1>Your details</h1>
+        <hr class="checkout_line" />
+        <form>
+          <label for="email">E-mail address*</label>
+          <input type="email" id="email" name="email" value="" /><br />
+          <label for="fname">First name*</label>
+          <input type="text" id="fname" name="fname" value="" /><br />
+          <label for="lname">Last name*</label>
+          <input type="text" id="lname" name="fname" value="" /><br />
+          <label for="tel">Contact phone*</label>
+          <input type="tel" id="tel" name="tel" value="" /><br />
+          <label for="address">Street Address*</label>
+          <input type="text" id="address" name="address" value="" /><br />
+          <label for="city">City*</label>
+          <input type="text" id="city" name="city" />
+          <label for="pcode">Postal Code*</label>
+          <input type="number" id="pcode" name="pcode" />
+
+          <h1>Shipping</h1>
+          <hr class="checkout_line" />
+          <input type="radio" id="pickup" name="shipping" value="pickup" />
+          <label for="pickup">Pick up at store (FREE)</label><br />
+          <input type="radio" id="stndshipping" name="shipping" value="stndshipping" />
+          <label for="stndshipping">5-7 days delivery (FREE)</label><br />
+          <input type="radio" id="expshipping" name="shipping" value="expshipping" />
+          <label for="expshipping">Express delivery (kr. 149,-)</label>
+
+          <h1>Payment</h1>
+          <hr class="checkout_line" />
+          <input type="radio" id="mastercard" name="payment" value="mastercard" />
+          <label for="mastercard"><img src="/images/mc_vector-6_150x100.png" alt="mastercard.logo" /></label>
+          <input type="radio" id="visa" name="payment" value="visa" />
+          <label for="visa"><img src="/images/visa-icon-vector-6_150x100.png" alt="visa.logo" /></label><br /><br />
+          <a href="ordersuccess.html"><input type="submit" value="PLACE ORDER" /></a>
+        </form>
+
+        <p>
+          By placing your order you agree with our
+          <a href="#">Terms&Conditions</a> and <a href="#">Privacy Policy</a>
+        </p>
       </section>
-      <a href="ordersuccess.html"><button>Place order</button></a>
-      <p>
-        By placing your order you agree with our
-        <a href="#">Terms&Conditions</a> and <a href="#">Privacy Policy</a>
-      </p>
     </main>
+    <footer>
+      &copy; RainyDays 2020
+      <a href="#">Privacy Policy</a>
+    </footer>
   </body>
 </html>

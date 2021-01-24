@@ -3,27 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="About Rainydays, we make raincoats you can wear while pushing the comfort zone "
-    />
-    <title>RainyDays | About us</title>
-    <script
-      src="https://kit.fontawesome.com/cc20864ea7.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta name="description" content="About Rainydays, we make raincoats you can wear while pushing the comfort zone " />
+    <title>RainyDays | Your cart</title>
+    <script src="https://kit.fontawesome.com/cc20864ea7.js" crossorigin="anonymous"></script>
     <link href="styles/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <section class="topbanner">
-        <a href="contact.html"
-          >Free shipping within Norway. Conditions apply. Click to learn more</a
-        >
-      </section>
-      <a href="index.html"><img src="/images/RainyDays_hvit.png" alt="" /></a>
+      <div class="topbanner">
+        <a href="contact.html">Free shipping within Norway. Conditions apply. Click to learn more</a>
+      </div>
+
+      <a href="index.html"><img src="/images/RainyDays_hvit.png" alt="rainydays.logo." /></a>
 
       <!--site navigation-->
+      <label for="hamburger-menu" id="hamburger-label"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
       <nav>
         <ul>
           <li><a href="women/index.html">Men</a></li>
@@ -34,50 +29,41 @@
       </nav>
 
       <!--Search-->
-      <form>
+      <form class="search">
         <input type="text" name="search" />
       </form>
 
       <!--Shopping-->
-      <section class="icons">
+      <div class="icons">
         <i class="far fa-heart"></i>
         <i class="far fa-user"></i>
-        <i class="fas fa-shopping-cart"></i>
-      </section>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
     </header>
 
     <main>
-      <h1 class="headline">Your shopping cart</h1>
-      <hr />
+      <div class="headline">
+        <h1>Your shopping cart</h1>
+      </div>
+
       <section class="cart">
-        <div>
-          <img src="/images/white-jacket_450x259_medlogo.jpg" />
-          <p>Rainydays Waterproof Jacket W's</p>
-          <p class="productprice">kr 999,00</p>
-          <div>Antall inn her</div>
-          <p class="productprice">kr 999,00</p>
-        </div>
+        <div class="cart_item">Rainydays Waterproof Jacket W's - kr 999,00</div>
+        <div class="cart_item">Antall inn her</div>
+        <div class="cart_item">kr 999,00</div>
 
-        <div>
-          <img src="/images/white-jacket_450x259_medlogo.jpg" />
-          <p>Rainydays Waterproof Jacket W's</p>
-          <p class="productprice">kr 999,00</p>
-          <div>Antall inn her</div>
-          <p class="productprice">kr 999,00</p>
-        </div>
+        <div class="cart_item">Rainydays Waterproof Jacket W's - kr 999,00</div>
+        <div class="cart_item">Antall inn her</div>
+        <div class="cart_item">kr 999,00</div>
 
-        <div>
+        <div class="cart_sum">
           <p>Subtotal kr 1998,00</p>
           <p class="sumtotal">Order total kr 1998,00</p>
         </div>
       </section>
-      <button class="btn wishlist">
-        <i class="far fa-heart wishlist"></i>Add to wishlist
-      </button>
-      <a href="checkout.html"
-        ><button class="btn checkout">
-          <i class="fas fa-shopping-cart checkout"></i>Go to checkout
-        </button></a
+
+      <button class="btn wishlist"><i class="far fa-heart wishlist"></i>Add to wishlist</button>
+      <a href="checkout.html" class="cart_checkout"
+        ><button class="btn checkout"><i class="fas fa-shopping-cart checkout"></i>Go to checkout</button></a
       >
     </main>
     <footer>
