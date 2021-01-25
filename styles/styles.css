@@ -384,4 +384,7 @@ article h1 {
   #hero {
     background-image: url(../images/andrea-gugliada-hero-mobile-679x453.jpg);
   }
+  .product img {
+    border: none;
+  }
 }
