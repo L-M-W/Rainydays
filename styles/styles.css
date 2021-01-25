@@ -179,7 +179,6 @@ li a {
 /*CONTACT PAGE*/
 
 .contact h1 {
-  width: 100vh;
   text-align: center;
 }
 .contact section {
@@ -190,7 +189,7 @@ li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vh;
+  width: 100%;
 }
 .contact_questions {
   border: 2px solid #eb8e00;
@@ -331,7 +330,7 @@ li a {
 article {
   text-align: center;
   max-width: 1000px;
-  margin: 2vh;
+  margin: 0 auto 0 auto;
 }
 article h1 {
   text-transform: uppercase;
