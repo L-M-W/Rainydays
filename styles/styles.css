@@ -311,9 +311,11 @@ li a {
 }
 #checkout_container p {
   text-align: center;
+  margin: 0.5em;
 }
 #checkout_container section {
-  margin: 1em;
+  margin: auto;
+  padding: 0.5em;
 }
 .backtocart {
   text-align: center;
@@ -325,6 +327,17 @@ li a {
   border-width: 0;
   background-color: #f5c44c;
   color: #f5c44c;
+}
+.form-container {
+  max-width: 760px;
+  text-align: left;
+}
+form {
+  font-family: inherit;
+  font-size: 100%;
+}
+form input {
+  margin: 1.5em;
 }
 /*ABOUT US PAGE*/
 article {
@@ -339,6 +352,14 @@ article h1 {
   margin: 3vh 0 3vh 0;
 }
 
+/*ORDER SUCCESS PAGE*/
+.ordersuccess-container {
+  display: block;
+  text-align: center;
+}
+.ordersuccess-container div {
+  padding: 1.5em;
+}
 /*********************Tablet****************************/
 @media screen and (max-width: 1375px) {
   .product-highlights {
