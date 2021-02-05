@@ -78,14 +78,11 @@ i {
   padding: 10px 50px;
 }
 .product {
-  position: relative;
-}
-.product h2 {
-  /* position: absolute;
-  top: 80%;
-  right: 20%;*/
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
+
 .product h2,
 .product h1 {
   color: #025951;
@@ -102,7 +99,6 @@ i {
   border: 2px solid #025951;
   display: inline-block;
   padding: 3px 40px;
-  margin-left: 140px;
 }
 .fa,
 .fas {
@@ -169,11 +165,17 @@ li a {
 }
 /*WOMEN MEN PRODUCT PAGE*/
 #product_intro {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin: 3vh;
 }
 #product_intro h1 {
   text-transform: uppercase;
+}
+#product_intro section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 /*CONTACT PAGE*/
