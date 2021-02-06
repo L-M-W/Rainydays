@@ -204,13 +204,14 @@ li a {
 
 /*PRODUCT PAGE*/
 .content_container {
-  margin: 3vh;
+  margin: 0.5em;
 }
 .img_container {
   width: 40%;
   margin-right: 4vh;
   float: left;
 }
+
 .product_headline {
   text-transform: uppercase;
 }
@@ -242,7 +243,11 @@ li a {
   padding: 8px;
 }
 /*CART PAGE*/
-
+.input_cart {
+  margin: 0.5em;
+  width: 20px;
+  height: 20px;
+}
 .cart {
   border: 0.1px solid #cccccc;
   width: 100%;
