@@ -227,9 +227,10 @@ li a {
 .content_container {
   margin: 0.5em;
 }
+
 .img_container {
   width: 40%;
-  margin-right: 4vh;
+  margin-right: 2em;
   float: left;
 }
 
@@ -380,7 +381,7 @@ article h1 {
   text-transform: uppercase;
 }
 .article_img {
-  margin: 3vh 0 3vh 0;
+  margin: 3em 0 3em 0;
 }
 
 /*ORDER SUCCESS PAGE*/
@@ -433,7 +434,7 @@ article h1 {
 /*********************Mobile**************************/
 @media screen and (max-width: 679px) {
   #hero {
-    background-image: url(../images/andrea-gugliada-hero-mobile-679x453.jpg);
+    background-image: url(../images/rona-lao-unsplash_hero-mobile-679x453.jpg);
   }
   .product img {
     border: none;
