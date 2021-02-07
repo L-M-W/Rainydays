@@ -168,6 +168,7 @@ li a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 1em;
 }
 #product_intro h1 {
   text-transform: uppercase;
@@ -238,10 +239,14 @@ li a {
   padding: 0px 116px;
   margin-top: 1em;
 }
+.cartbtn:active {
+  background-color: #025951;
+}
 .addcart {
   color: #fff;
   padding: 8px;
 }
+
 /*CART PAGE*/
 .input_cart {
   margin: 0.5em;
@@ -273,13 +278,7 @@ li a {
   width: 100%;
   text-align: center;
 }
-/*.productprice {
-  font-weight: 900;
-}
-.sumtotal {
-  font-weight: 900;
-  text-transform: uppercase;
-}*/
+
 .btn {
   border: 0.1px solid;
   font-family: inherit;
@@ -358,6 +357,7 @@ article {
   text-align: center;
   max-width: 1000px;
   margin: 0 auto 0 auto;
+  padding: 1em;
 }
 article h1 {
   text-transform: uppercase;
