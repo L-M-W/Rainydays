@@ -204,6 +204,8 @@ li a {
 }
 .contact_questions h3 {
   display: inline;
+  font-size: 1em;
+  padding-right: 0.5em;
 }
 /*PRODUCT PAGE*/
 .content_container {
