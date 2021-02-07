@@ -199,7 +199,8 @@ li a {
   padding: 0.8em;
   margin: 3vh;
 }
-.contact_questions .fas {
+.contact_questions .fas,
+.far {
   padding: 1vh;
 }
 .contact_questions h3 {
