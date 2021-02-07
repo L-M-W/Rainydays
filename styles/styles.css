@@ -202,7 +202,9 @@ li a {
 .contact_questions .fas {
   padding: 1vh;
 }
-
+.contact_questions h3 {
+  display: inline;
+}
 /*PRODUCT PAGE*/
 .content_container {
   margin: 0.5em;
