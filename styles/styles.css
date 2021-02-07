@@ -62,13 +62,20 @@ h2 {
 }
 .topbanner {
   background-color: #eb8e00;
-  color: white;
   text-align: center;
   width: 100%;
 }
+.topbanner a {
+  color: #053641;
+}
+
 i {
   font-size: 1.7em;
   color: #eb8e00;
+  padding: 10px 20px;
+}
+#icons .far,
+#icons .fas {
   padding: 10px 20px;
 }
 .cta {
@@ -178,6 +185,14 @@ li a {
   flex-direction: column;
   text-align: center;
 }
+/*MY PAGE*/
+.login_btn {
+  background-color: #eb8e00;
+  color: #fff;
+  border-color: #eb8e00;
+  font-family: inherit;
+  font-size: 2em;
+}
 
 /*CONTACT PAGE*/
 
@@ -221,11 +236,7 @@ li a {
 .product_headline {
   text-transform: uppercase;
 }
-.pricetag-single {
-  color: #eb8e00;
-  border: 2px solid #eb8e00;
-  justify-self: left;
-}
+
 .sizebtn {
   font-family: "D-DIN Condensed", Arial, sans-serif;
   color: #fff;
@@ -239,16 +250,17 @@ li a {
   font-family: inherit;
   font-size: 1.2em;
   text-transform: uppercase;
-  color: #fff;
+  color: #053641;
   background-color: #eb8e00;
   padding: 0px 116px;
   margin-top: 1em;
 }
 .cartbtn:active {
   background-color: #025951;
+  color: #fff;
 }
 .addcart {
-  color: #fff;
+  color: #053641;
   padding: 8px;
 }
 
@@ -303,7 +315,7 @@ li a {
 }
 .checkout {
   border-color: #eb8e00;
-  color: #fff;
+  color: #053641;
   background-color: #eb8e00;
 }
 .wishlist {
@@ -352,7 +364,7 @@ form input {
 }
 .form-submit-button {
   border-color: #eb8e00;
-  color: #fff;
+  color: #053641;
   background-color: #eb8e00;
   font-size: 1.5em;
   padding: 1em;
